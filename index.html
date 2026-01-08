@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USD1LIFE | The Official Sovereign Asset</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Inter:wght@100;300;400;600;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold-primary: #bf953f;
+            --gold-secondary: #fcf6ba;
+            --gold-tertiary: #b38728;
+            --gold-light: #fbf5b7;
+            --gold-dark: #aa771c;
+            --deep-black: #020202;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--deep-black);
+            color: #ffffff;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        .font-playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, var(--gold-primary), var(--gold-secondary), var(--gold-tertiary), var(--gold-light), var(--gold-dark));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% 200%;
+            animation: gold-flow 8s ease infinite;
+        }
+        .gold-bg {
+            background: linear-gradient(135deg, var(--gold-primary), var(--gold-secondary), var(--gold-tertiary), var(--gold-light), var(--gold-dark));
+            background-size: 200% 200%;
+            animation: gold-flow 8s ease infinite;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(191, 149, 63, 0.2);
+        }
+        @keyframes gold-flow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--deep-black);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--gold-dark);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--gold-primary);
+        }
+        .text-glow {
+            text-shadow: 0 0 40px rgba(191, 149, 63, 0.4);
+        }
+        .cinematic-vignette {
+            background: radial-gradient(circle, transparent 20%, rgba(0,0,0,0.95) 100%);
+        }
+        @keyframes float {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-12px); }
+        }
+        .animate-float {
+          animation: float 5s ease-in-out infinite;
+        }
+        section {
+          position: relative;
+          z-index: 10;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "recharts": "https://esm.sh/recharts@^3.6.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
