@@ -83,10 +83,7 @@ const App: React.FC = () => {
             </div>
           </section>
 
-          <Suspense fallback={<div className="py-40" />}>
-            <LifestyleSection />
-          </Suspense>
-
+          {/* LifestyleSection removed per user request */}
 
 
           <div id="tokenomics" className="scroll-mt-32">
