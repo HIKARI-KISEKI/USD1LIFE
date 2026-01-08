@@ -32,7 +32,7 @@ const Tokenomics: React.FC = () => {
               <TrendingUp className="w-32 h-32 text-yellow-500" />
             </div>
             <p className="text-gray-300 text-2xl leading-relaxed italic font-light relative z-10">
-              "Fair launch via CTO—no team tokens, all for the holders. USD1LIFE thrives on organic memes and real utility in the WLFI ecosystem. Bagwork matters here. 🦅"
+              "Fair takeover via CTO—no team tokens, all for the holders. USD1LIFE thrives on organic memes and real utility in the WLFI ecosystem. Bagwork matters here. 🦅"
             </p>
           </div>
         </div>

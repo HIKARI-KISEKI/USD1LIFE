@@ -13,6 +13,7 @@ const Hero: React.FC = () => {
           alt="Luxury Architecture"
           className="w-full h-full object-cover scale-110 animate-[pulse_15s_infinite] transition-transform duration-[15000ms]"
           loading="eager"
+          fetchpriority="high"
         />
       </div>
 

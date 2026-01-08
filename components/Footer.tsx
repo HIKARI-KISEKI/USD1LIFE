@@ -65,6 +65,19 @@ const Footer: React.FC = () => {
             </div>
             <span className="text-yellow-500/40">SOLANA NETWORK</span>
           </div>
+
+          <div className="mt-12 pt-8 border-t border-white/5 text-center">
+            <a
+              href="https://x.com/kiseki_Hikari__"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 text-gray-500 hover:text-yellow-500 transition-all duration-300 text-sm font-semibold group"
+            >
+              <span className="tracking-wider">Made by</span>
+              <span className="text-yellow-500/70 group-hover:text-yellow-500 font-black tracking-widest">HIKARI</span>
+              <Twitter className="w-4 h-4 opacity-50 group-hover:opacity-100 transition-opacity" />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
