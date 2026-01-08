@@ -58,12 +58,16 @@ const Footer: React.FC = () => {
           <p className="text-gray-600 text-[11px] font-black uppercase tracking-[0.5em]">
             © 2026 USD1LIFE COMMUNITY. NOT AFFILIATED WITH WLFI/USD1 OFFICIALLY.
           </p>
-          <div className="flex items-center gap-12 text-[11px] font-black tracking-[0.5em] text-gray-600 uppercase">
+          <div
+            onClick={() => navigator.clipboard.writeText('Dx4593M...Mgbonk')}
+            className="flex items-center gap-12 text-[11px] font-black tracking-[0.5em] text-gray-600 uppercase cursor-pointer hover:text-yellow-500 transition-colors group"
+            title="Click to copy CA"
+          >
             <div className="flex items-center gap-4">
-              <div className="w-3 h-3 bg-yellow-500 rounded-full animate-pulse shadow-[0_0_15px_rgba(191,149,63,0.5)]" />
+              <div className="w-3 h-3 bg-yellow-500 rounded-full animate-pulse shadow-[0_0_15px_rgba(191,149,63,0.5)] group-hover:scale-125 transition-transform" />
               <span>CA: Dx459...Mgbonk</span>
             </div>
-            <span className="text-yellow-500/40">SOLANA NETWORK</span>
+            <span className="text-yellow-500/40 group-hover:text-yellow-500 transition-colors">SOLANA NETWORK</span>
           </div>
 
           <div className="mt-12 pt-8 border-t border-white/5 text-center">
